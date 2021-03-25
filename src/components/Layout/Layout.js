@@ -13,7 +13,7 @@ export default function Layout({children}) {
                 {children}
             </main>
 
-            <footer className={styles.footer}><a href="http://digital.vaccaros.com.br/" target="_blank">Made by Andre </a></footer>
+            <footer className={styles.footer}><a href="/" target="_blank">Made by Vaccpizza </a></footer>
             <div className={styles.freepick}>Icons made by <a href="https://www.freepik.com" title="Freepik" target="_blank">Freepik</a> from <a href="https://www.flaticon.com/" title="Flaticon" target="_blank">www.flaticon.com</a></div>
         </div>
     )
