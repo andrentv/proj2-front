@@ -16,6 +16,7 @@ function MyApp({ Component, pageProps }) {
           </a></Link>
           <Link href="/"><a><li className={styles.navbarContact}>Home</li></a></Link>
           <Link href="/about"><a><li className={styles.navbarContact}>About</li></a></Link>
+          <Link href="/"><a><li className={styles.navbarContact}>Site teste!!</li></a></Link>
         </ul>
       </nav>
       <div className={styles.container}>
