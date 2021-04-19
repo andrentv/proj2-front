@@ -12,12 +12,23 @@ function Home() {
 export default Home;
 */
 
-export default function home() {
+export default function home({ pizzas }) {
   return (
     <Layout>
-      <Home />
+      <Home pizzas={pizzas}/>
     </Layout>
   )
+}
+
+export const getStaticProps = async ({ params }) => {
+  const res = await fetch('https://vacc-ecommercebackend.herokuapp.com/');
+  const pizzas = await res.json();
+ 
+  return {
+    props: {
+      pizzas,
+    }
+  };
 }
 
 
