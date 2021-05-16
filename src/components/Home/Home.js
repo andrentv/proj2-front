@@ -19,7 +19,7 @@ export default function Home({ pizzas }) {
     return (
         <div>
             <div className={styles.searchWrapper}>
-                <input placeholder="Search for pizza or topping..." className={styles.searchBar} onChange={onInputChange} />
+                <input placeholder="Search for pizza name or topping..." className={styles.searchBar} onChange={onInputChange} />
             </div>
             <div className={styles.pizzaContainer}>
                 {filteredPizzas < 1 ? 
